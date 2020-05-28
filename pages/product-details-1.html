@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>产品与服务</title>
+    <meta name="description" content="产品与服务">
+    <meta name="keywords" content="产品与服务">
+    <link href="/Public/Mobile/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/Mobile/css/style.css" rel="stylesheet">
+    <link href="/Public/Mobile/js/slick/slick.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="/Public/Home/js/html5shiv.min.js"></script>
+    <script src="/Public/Home/js/respond.min.js"></script>
+    <![endif]-->
+    <script>
+  <!--统计代码-->    
+  </script>
+</head>
+<script>
+  window.onresize = set;
+    set();
+    function set(){
+
+      //获取视口宽度
+      var w = document.documentElement.clientWidth;
+      //判断视口
+      if(w > 750){
+
+        document.documentElement.style.fontSize = "20px";
+
+      }else if(w < 320){
+
+        document.documentElement.style.fontSize = 320 / 750* 20 + "px";
+
+      }else{
+        //与设计图的倍数 (750是设计图宽度)
+        var rate  = w / 750;
+        //改变根基的字号html size是20px
+        var htmlSize = rate * 20;
+        //更改html的字号
+        document.documentElement.style.fontSize = htmlSize + "px";
+      }
+      
+    }
+</script>
+<body>
+<!--顶部-->
+<header class="mod-header">
+  <div class="header-left pull-left">
+    <a href="tel:400-088-1900" class="header-tel">
+      <i class="icon_1 tel-img"></i>
+      <em>400-088-1900</em>
+    </a>
+  </div>
+  <div class="header-right pull-right" id="language">
+    <div class="language language-zh">
+      <i class="language-img"></i>
+      <div class="language-txt">
+        中文
+      </div>
+    </div>
+    
+    <ul class="header-language">
+      <li>
+        <a href="">中文</a>
+      </li>
+      <!-- <li>
+        <a href="">ENG</a>
+      </li> -->
+    </ul>
+  </div>
+  <div class="cl"></div>
+</header>  
+<!--顶部结束-->
+
+<!--菜单与logo-->
+<nav class="nav">
+  <div class="nav-logo">
+    <a href="/">
+      <img src="/Public/Mobile/images/pic/logo.png" alt="道生医疗" />
+    </a>
+  </div>
+  <div class="nav-menu" id="menu">
+    <b></b>
+    <b></b>
+    <b></b>
+  </div>
+  <div class="nav-down">
+    <ul class="stair">
+      <li>
+        <div class="stair-title">
+          <a href="product.html" data-href="product.html">中医诊断设备</a>
+        </div>
+        <ul class="second-level">
+            <li>
+                <a href="/product-details-1">-&nbsp道生四诊仪</a>
+              	</li><li>
+                <a href="/product-details-2">-&nbsp道生舌面象仪</a>
+              	</li><li>
+                <a href="/product-details-3">-&nbsp道生脉象仪</a>
+              	</li><li>
+                <a href="/product-details-6">-&nbsp道生脉象采集体质辨识仪</a>
+              	</li><li>
+                <a href="/product-details-9">-&nbsp道生手持式舌象仪</a>
+              	</li>        </ul>
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="intelligent-software.html" data-href="intelligent-software.html">智能辨识软件</a>
+        </div>
+        <ul class="second-level">
+        	<li>
+                <a href="/product-details-5">-&nbsp多人群四诊合参体质辨识</a>
+              	</li><li>
+                <a href="/product-details-11">-&nbsp妇幼中医健康管理</a>
+              	</li><li>
+                <a href="/product-details-24">-&nbsp中医慢病管理</a>
+              	</li><li>
+                <a href="/product-details-12">-&nbsp慢病风险评估</a>
+              	</li><li>
+                <a href="/product-details-26">-&nbsp中医辨证论治智能辅助</a>
+              	</li><li>
+                <a href="/product-details-14">-&nbsp中医心理测评</a>
+              	</li><li>
+                <a href="/product-details-7">-&nbsp中医健康干预</a>
+              	</li><li>
+                <a href="/product-details-21">-&nbsp中医药+互联网服务</a>
+              	</li>        </ul>
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="tcm-intelligence.html" data-href="tcm-intelligence.html">中医数据智能</a>
+        </div>
+        <ul class="second-level">
+            <li>
+                <a href="/product-details-13">-&nbsp中医治未病数字化系统</a>
+              	</li><li>
+                <a href="/product-details-18">-&nbsp妇幼中医健康管理系统</a>
+              	</li><li>
+                <a href="/product-details-20">-&nbsp智能云中医</a>
+              	</li>        </ul>
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="scene.html" data-href="scene.html">场景与应用</a>
+        </div>
+        <ul class="second-level">
+          <li>
+	             <a href="/scene-1">-&nbsp治未病/专科联盟建设</a>
+	          </li><li>
+	             <a href="/scene-9">-&nbsp中医体检</a>
+	          </li><li>
+	             <a href="/scene-7">-&nbsp中医科研</a>
+	          </li><li>
+	             <a href="/scene-6">-&nbsp中医教学/实训/规培</a>
+	          </li><li>
+	             <a href="/scene-4">-&nbsp基层中医馆 </a>
+	          </li><li>
+	             <a href="/scene-5">-&nbsp名老中医工作室</a>
+	          </li>        </ul> 
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="about.html" data-href="about.html">关于道生</a>
+        </div>
+        <ul class="second-level">
+          <li>
+	              <a href="http://www.daosh.com/about.html">-&nbsp道生简介</a>
+	          </li><li>
+	              <a href="http://www.daosh.com/about-news.html">-&nbsp新闻</a>
+	          </li><li>
+	              <a href="http://www.daosh.com/about-honor.html">-&nbsp荣誉</a>
+	          </li><li>
+	              <a href="http://www.daosh.com/about-case.html">-&nbsp案例分享</a>
+	          </li>        </ul> 
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="contact.html" datd-href="contact.html">联系我们</a>
+        </div>
+        
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--菜单与LOGO END-->
+<!--顶部结束-->
+
+<!--banner-->
+<section class="banner-inside">
+  
+</section>
+<!--bennerEND-->
+<!--内容-->
+<section class="product-details">
+  <div class="getBack" onclick="javascript:history.back(-1);">
+    返回
+  </div>
+  <div class="clearfix"></div>
+  <div class="headline">
+    <div class="headline-img pull-left">
+      <img src="/Public/Uploads/2018-09-13/5b9a277316e36.png" alt="道生四诊仪" />
+    </div>
+    <div class="headline-title">
+      <h1>道生四诊仪</h1>
+      <div class="headline-text">
+        <p>DS01-A 舌面脉信息采集体质辨识系统</p>
+        <!--<p>
+          	（(沪械注准20202200060)）
+        </p>-->
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  
+  <div class="details-content">
+    <div class="detail-content-list">
+      <div class="detail-content-list-top">
+        <h4>产品概述</h4>
+        <i></i>
+      </div>
+      <div class="detail-content-list-p">
+        <p>道生舌面脉信息采集体质辨识系统融合大量现代科技成果以及众多中医专家临床经验，将中医舌诊、面诊、脉诊、问诊等子系统整合，可记录、分析、保存四诊原始图像、客观化数据、四诊特征。为健康状态辨识、中医辨证提供客观化依据，并支持开展个体化中医健康管理服务 。</p><p style="line-height: 35px; background: white;"><br/></p>      </div>
+    </div>
+    <!--<div class="detail-content-list">
+      <div class="detail-content-list-top">
+        <h4>结构组成</h4>
+        <i></i>
+      </div>
+      <div class="detail-content-list-p">
+        <p>产品主要是由舌面单元、脉象单元、问诊（体质辨识）单元、软件（版本号：V1.1）、内置隔离电源（隔离变压器）、箱式推车组成的医用电气设备，以及内置计算机、显示器、键盘、鼠标等非医用电气设备组成的医用电气系统。</p><p><br/></p>      </div>
+    </div>
+    <div class="detail-content-list">
+      <div class="detail-content-list-top">
+        <h4>功能特色</h4>
+        <i></i>
+      </div>
+      <div class="detail-content-list-p">
+        <p>系统综合四诊信息，进行中医健康状态辨识，支持开展个体化中医健康管理服务。</p><p style="line-height: 35px; background: white;"><br/></p>      </div>
+    </div>
+    <div class="detail-content-list">
+      <div class="detail-content-list-top">
+        <h4>应用领域</h4>
+        <i></i>
+      </div>
+      <div class="detail-content-list-p">
+        <p>由中医师或在中医师指导下，进行舌象、面色、脉象诊测信息采集及辅助体质辨识，供中医辨证参考。可应用于中医治未病服务、基层医疗中医预防保健服务、综合医院健康管理中心-中医体检、中医诊断实验教学、中医药科研项目研究、中医院信息化建设、中医健康产业等领域。</p><p><br/></p>      </div>-->
+    </div>
+  </div>
+</section>
+<!--内容end-->
+
+<!--其它-->
+<div class="public-other">
+  <header class="header-title">
+      <div class="title-h3">
+        <h3 class="title-product public-title">
+          其它产品
+        </h3>
+      </div>
+  </header>
+  <div class="list-li product-list">
+    <ul class="list-ul">
+    	<li>
+	        <a href="product-details-2.html" data-href="">
+	          <div class="list-img">
+	            <img src="/Public/Uploads/2018-09-13/5b9a2fbe7de29.jpg" alt="道生舌面象仪">
+	          </div>
+	          <div class="list-h3">
+	            <h3>
+	            道生舌面象仪	            </h3>
+	          </div>
+	        </a>
+	      </li><li>
+	        <a href="product-details-3.html" data-href="">
+	          <div class="list-img">
+	            <img src="/Public/Uploads/2018-09-13/5b9a2fcad59f8.jpg" alt="道生脉象仪">
+	          </div>
+	          <div class="list-h3">
+	            <h3>
+	            道生脉象仪	            </h3>
+	          </div>
+	        </a>
+	      </li><li>
+	        <a href="product-details-6.html" data-href="">
+	          <div class="list-img">
+	            <img src="/Public/Uploads/2018-09-13/5b9a2fd722551.jpg" alt="道生脉象采集体质辨识仪">
+	          </div>
+	          <div class="list-h3">
+	            <h3>
+	            道生脉象采集体质辨识仪	            </h3>
+	          </div>
+	        </a>
+	      </li><li>
+	        <a href="product-details-9.html" data-href="">
+	          <div class="list-img">
+	            <img src="/Public/Uploads/2018-09-13/5b9a303722551.jpg" alt="道生手持式舌象仪">
+	          </div>
+	          <div class="list-h3">
+	            <h3>
+	            道生手持式舌象仪	            </h3>
+	          </div>
+	        </a>
+	      </li>    </ul>
+    <div class="see-more">
+      <a href="product.html" data-href="product.html">
+        查看更多
+      </a>
+    </div>
+  </div>
+</div>
+<!--其它END-->
+<!--底部开始-->
+<!--footer-->
+<footer class="footer-content">
+  <div class="footer-img">
+    <img src="/Public/Uploads/2018-09-12/5b98bd8b5b8d8.jpg" alt="" />
+    <img src="/Public/Uploads/2018-09-12/5b98bdc75b8d8.jpg" alt="" />
+  </div>
+  <div class="footer-text">
+    <p>关注道生公众号，获取道生信息</p>
+    <p>
+      客服电话：<a href="tel:400-088-1900">400-088-1900</a>
+    </p>
+    <p>
+      公司邮箱：<a href="mailto:daosh@daosh.com">daosh@daosh.com</a>
+    </p>
+  </div>
+  <div class="footer-leave">
+    <a href="contact.html#ly" data-href="contact.html#ly">在线留言</a>
+  </div>
+</footer>
+<!--footerEND-->
+<!--底部结束-->
+<script src="/Public/Mobile/js/jquery.min.js"></script>
+<script src="/Public/Mobile/js/bootstrap.min.js"></script>
+<script src="/Public/Mobile/js/index.js"></script>
+</body>
+</html>

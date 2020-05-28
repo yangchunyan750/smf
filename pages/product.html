@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>产品与服务</title>
+    <meta name="description" content="产品与服务">
+    <meta name="keywords" content="产品与服务">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../js/slick/slick.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<script>
+    window.onresize = set;
+    set();
+    function set(){
+      //获取视口宽度
+      var w = document.documentElement.clientWidth;
+      //判断视口
+      if(w > 750){
+        document.documentElement.style.fontSize = "20px";
+      }else if(w < 320){
+        document.documentElement.style.fontSize = 320 / 750* 20 + "px";
+      }else{
+        //与设计图的倍数 (750是设计图宽度)
+        var rate  = w / 750;
+        //改变根基的字号html size是20px
+        var htmlSize = rate * 20;
+        //更改html的字号
+        document.documentElement.style.fontSize = htmlSize + "px";
+      }
+    } 
+</script>
+<body>
+<!--顶部-->
+<header class="mod-header">
+  <div class="header-left pull-left">
+    <a href="tel:400-022-3085" class="header-tel">
+      <i class="icon_1 tel-img"></i>
+      <em>400-022-3085</em>
+    </a>
+  </div>
+  <div class="cl"></div>
+</header>  
+<!--顶部结束-->
+
+<!--菜单与logo-->
+<nav class="nav">
+  <div class="nav-logo">
+    <a href="/">
+      <img src="../images/icon/icon1.png" alt="圣美孚科技" />
+    </a>
+  </div>
+  <div class="nav-menu" id="menu">
+    <b></b>
+    <b></b>
+    <b></b>
+  </div>
+  <div class="nav-down">
+    <ul class="stair">
+      <li>
+        <div class="stair-title">
+          <a href="product.html" data-href="product.html">中医诊断设备</a>
+        </div>
+        <ul class="second-level">
+            <li>
+                <a href="/product-details-1">-&nbsp道生四诊仪</a>
+              	</li><li>
+                <a href="/product-details-2">-&nbsp道生舌面象仪</a>
+              	</li><li>
+                <a href="/product-details-3">-&nbsp道生脉象仪</a>
+              	</li><li>
+                <a href="/product-details-6">-&nbsp道生脉象采集体质辨识仪</a>
+              	</li><li>
+                <a href="/product-details-9">-&nbsp道生手持式舌象仪</a>
+              	</li>        
+		</ul>
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="intelligent-software.html" data-href="intelligent-software.html">智能辨识软件</a>
+        </div>
+        <ul class="second-level">
+        	<li>
+                <a href="/product-details-5">-&nbsp多人群四诊合参体质辨识</a>
+              	</li><li>
+                <a href="/product-details-11">-&nbsp妇幼中医健康管理</a>
+              	</li><li>
+                <a href="/product-details-24">-&nbsp中医慢病管理</a>
+              	</li><li>
+                <a href="/product-details-12">-&nbsp慢病风险评估</a>
+              	</li><li>
+                <a href="/product-details-26">-&nbsp中医辨证论治智能辅助</a>
+              	</li><li>
+                <a href="/product-details-14">-&nbsp中医心理测评</a>
+              	</li><li>
+                <a href="/product-details-7">-&nbsp中医健康干预</a>
+              	</li><li>
+                <a href="/product-details-21">-&nbsp中医药+互联网服务</a>
+              	</li>        
+		</ul>
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="tcm-intelligence.html" data-href="tcm-intelligence.html">中医数据智能</a>
+        </div>
+        <ul class="second-level">
+            <li>
+                <a href="/product-details-13">-&nbsp中医治未病数字化系统</a>
+              	</li><li>
+                <a href="/product-details-18">-&nbsp妇幼中医健康管理系统</a>
+              	</li><li>
+                <a href="/product-details-20">-&nbsp智能云中医</a>
+              	</li>        
+		</ul>
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="scene.html" data-href="scene.html">场景与应用</a>
+        </div>
+        <ul class="second-level">
+          <li>
+	             <a href="/scene-1">-&nbsp治未病/专科联盟建设</a>
+	          </li><li>
+	             <a href="/scene-9">-&nbsp中医体检</a>
+	          </li><li>
+	             <a href="/scene-7">-&nbsp中医科研</a>
+	          </li><li>
+	             <a href="/scene-6">-&nbsp中医教学/实训/规培</a>
+	          </li><li>
+	             <a href="/scene-4">-&nbsp基层中医馆 </a>
+	          </li><li>
+	             <a href="/scene-5">-&nbsp名老中医工作室</a>
+	          </li>        
+		</ul> 
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="about.html" data-href="about.html">关于道生</a>
+        </div>
+        <ul class="second-level">
+          <li>
+	              <a href="http://www.daosh.com/about.html">-&nbsp道生简介</a>
+	          </li><li>
+	              <a href="http://www.daosh.com/about-news.html">-&nbsp新闻</a>
+	          </li><li>
+	              <a href="http://www.daosh.com/about-honor.html">-&nbsp荣誉</a>
+	          </li><li>
+	              <a href="http://www.daosh.com/about-case.html">-&nbsp案例分享</a>
+	          </li>        </ul> 
+      </li>
+      <li>
+        <div class="stair-title">
+          <a href="contact.html" datd-href="contact.html">联系我们</a>
+        </div>
+        
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--菜单与LOGO END-->
+<!--顶部结束-->
+
+<!--banner-->
+<section class="banner-inside">
+  <img src="../images/product/product.png" alt="产品与服务" />
+<!--  <div class="inside-text product-text">
+    <h1>产品与服务</h1>
+  </div> -->
+</section>
+<!--bennerEND-->
+<!--内容-->
+<section class="product-content">
+  <header class="product-header">
+    <a href="#siz" class="si active">
+      产品介绍
+    </a>
+    <a href="#ruanj" class="">
+      软件服务
+    </a>
+  </header>
+  <div class="product_list">
+    <a name="siz"></a>
+    <div class="product-list-li">
+      <header class="product-list-h2">
+        <h2>产品展示</h2>
+      </header>
+      <div class="list-li">
+        <ul class="list-ul">
+        	<li>
+	            <a href="product-details-1.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="../images/product/2020052801.png" alt="中医综合诊断系统" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  中医综合诊断系统	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-2.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="../images/product/2020052802.png" alt="SMF音乐调理系统" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  SMF音乐调理系统	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-3.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="../images/product/2020052806.png" alt="中医四诊机器人" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  中医四诊机器人	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-4.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="../images/product/2020052805.png" alt="手提箱式中医四诊仪" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  手提箱式中医四诊仪	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-5.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="../images/product/2020052804.png" alt="中医体质辨识系统" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  中医体质辨识系统	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+			    <a href="product-details-6.html" data-href="product-details.html">
+			      <div class="list-img">
+			        <img src="../images/product/2020052808.png" alt="中医闻诊诊断系统" />
+			      </div>
+			      <div class="list-h3">
+			        <h3>
+			          中医闻诊诊断系统	                
+					</h3>
+			      </div>
+			    </a>
+			</li>  
+			<li>
+				<a href="product-details-7.html" data-href="product-details.html">
+				  <div class="list-img">
+					<img src="../images/product/2020052807.png" alt="中医脉象诊断系统" />
+				  </div>
+				  <div class="list-h3">
+					<h3>
+					  中医脉象诊断系统	                
+					</h3>
+				  </div>
+				</a>
+			</li>
+			 <li>
+				<a href="product-details-8.html" data-href="product-details.html">
+				  <div class="list-img">
+					<img src="../images/product/2020052803.png" alt="子午流注诊断系统" />
+				  </div>
+				  <div class="list-h3">
+					<h3>
+					  子午流注诊断系统	                
+					</h3>
+				  </div>
+				</a>
+			 </li>  
+<!-- 			 <li>
+			 	<a href="product-details-9.html" data-href="product-details.html">
+			 	  <div class="list-img">
+			 		<img src="../images/product/2020052804.png" alt="中医问诊诊断系统" />
+			 	  </div>
+			 	  <div class="list-h3">
+			 		<h3>
+			 		  中医体质辨识系统	                
+			 		</h3>
+			 	  </div>
+			 	</a>
+			 </li> --> 
+		</ul>
+      </div>
+    </div>
+    
+    <a name="ruanj"></a>
+    <div class="product-list-li">
+      <header class="product-list-h2">
+        <h2>软件服务</h2>
+      </header>
+      <div class="list-li">
+        <ul class="list-ul">
+        	<li>
+	            <a href="product-details-10.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="多人群四诊合参体质辨识" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  多人群四诊合参体质辨识	                
+					</h3>
+	              </div>
+	            </a>
+	        </li><li>
+	            <a href="product-details-11.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="妇幼中医健康管理" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  妇幼中医健康管理	                
+					</h3>
+	              </div>
+	            </a>
+	        </li><li>
+	            <a href="product-details-12.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="中医慢病管理" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  中医慢病管理	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-13.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="慢病风险评估" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  慢病风险评估	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-14.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="中医辨证论治智能辅助" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  中医辨证论治智能辅助	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-15.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="中医心理测评" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  中医心理测评	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-16.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="中医健康干预" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  中医健康干预	                
+					 </h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-17.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="治未病科研大数据挖掘系统" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  治未病科研大数据挖掘系统	                
+					 </h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-18.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="道生舌象教学实训系统" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  道生舌象教学实训系统	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-19.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="中医药+互联网服务" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  中医药+互联网服务	               
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-20.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="中医治未病数字化系统" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  中医治未病数字化系统	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-21.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="妇幼中医健康管理系统" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  妇幼中医健康管理系统	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>
+			<li>
+	            <a href="product-details-22.html" data-href="product-details.html">
+	              <div class="list-img">
+	                <img src="" alt="智能云中医" />
+	              </div>
+	              <div class="list-h3">
+	                <h3>
+	                  智能云中医	                
+					</h3>
+	              </div>
+	            </a>
+	        </li>        
+		</ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--内容end-->
+
+
+<!--底部开始-->
+<!--footer-->
+<footer class="footer-content">
+  <div class="footer-img">
+    <img src="" alt="" />
+    <img src="" alt="" />
+  </div>
+  <div class="footer-text">
+    <p>关注道生公众号，获取道生信息</p>
+    <p>
+      客服电话：<a href="tel:400-088-1900">400-088-1900</a>
+    </p>
+    <p>
+      公司邮箱：<a href="mailto:daosh@daosh.com">daosh@daosh.com</a>
+    </p>
+  </div>
+  <div class="footer-leave">
+    <a href="contact.html#ly" data-href="contact.html#ly">在线留言</a>
+  </div>
+</footer>
+<!--footerEND-->
+<!--底部结束-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+<script>
+  $(".product-header a").on("touchstart",function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  })
+</script>
+<!-- Initialize Swiper -->
+</body>
+</html>
