@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>中医综合诊断设备|中医舌面象诊断|中医脉象诊断设备-芜湖圣美孚科技有限公司</title>
+    <meta name="description" content="芜湖圣美孚科技有限公司(电话:13083210911)致力于中医综合诊断设备的生产和销售,包括中医舌面象诊断系统、中医脉象诊断设备、中医四诊仪等中医医疗器械;公司在业界深受用户好评,欢迎大家来电咨询">
+    <meta name="keywords" content="中医综合诊断系统,中医脉象诊断系统,中医舌面象仪,中医四诊仪,芜湖圣美孚科技">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+	<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<!--顶部-->
+	<header class="mod-header"></header>  
+	<!--顶部结束-->
+	
+	<!--菜单与logo-->
+	<nav class="nav"></nav>
+	<!--菜单与LOGO END-->
+	
+	
+	<!--内容-->
+	<section class="banner-inside">
+		 <img src="../images/contact/5bac7e456ea05.jpg" alt="联系我们" />
+	</section>
+	<section class="contact-content">
+	  <div class="contact-top">
+	    <header class="contact-header">
+	      <h3>芜湖圣美孚科技有限公司</h3>
+	    </header>
+	    <div class="contact-site">
+	        <p>
+	          客服电话：<a href="tel:400-022-3085"><span>400-022-3085</span></a>
+	        </p>
+	        <p></p>
+	        <p>
+	          <span>地   址：</span>芜湖市弋江区高新区服务外包园A13栋</p>
+	        <p>
+	          <span>电   话：</span>13083210911</p>
+	        <p style="margin-bottom: 0.5rem;">
+	          <span>E-mail : </span>shengmeifu@126.com</p>
+	    </div>
+	    <div class="contact-img">
+	      <img src="../images/erweima.png" alt="wat_1.jpg">
+	    </div>
+	  </div>
+	  <a name="ly"></a>
+	  <div class="contact-bottom">
+	    <div class="contact-form-box">
+	      <header class="contact-right-header">
+	        <h3>留言板</h3>
+	      </header>
+	      <form action="contact-add.html" class="contact-form" onsubmit="javascript:return funsubmit();" method="post">
+	        <div class="contact-list">
+	          <label class="contact-label">
+	            姓&nbsp;&nbsp;&nbsp; 名：
+	          </label>
+	          <div class="contact-input">
+	            <input type="text" id="message-name" name="name"/>
+	          </div>
+	        </div>
+	        <div class="contact-list">
+	          <label class="contact-label">
+	            电&nbsp;&nbsp;&nbsp; 话：
+	          </label>
+	          <div class="contact-input">
+	            <input type="number" id="message-phone" name="phone"/>
+	          </div>
+	        </div>
+	        <div class="contact-list">
+	          <label class="contact-label">
+	            留&nbsp;&nbsp;&nbsp; 言：
+	          </label>
+	          <div class="contact-input  contact-list-textarea">
+	            <textarea id="message-text" class="contact-textarea" name="content"></textarea>
+	          </div>
+	        </div>
+	        <div class="contact-list">
+	          <label class="contact-label">
+	            验证码：
+	          </label>
+	          <div class="contact-input">
+	            <input type="text" style="width:40%;" id="yzm" name="yzm"/><img src="../images/contact/yzm.png" alt="验证码" id="yanz" onclick=""/>
+	          </div>
+	        </div>
+	        <button type="submit" class="btn btn-default contact-submit">提交</button>
+	      </form>
+	    </div>
+	  </div>
+	
+	  <div class="map">
+	    <header class="map-box">
+	      <ul class="map_list">
+	      	<li>芜湖总部</li>
+		  </ul>
+	    </header>
+	    <div id="container3" class="container fl"></div>
+	  </div>
+	
+	</section>
+	  <!--内容END-->
+	  
+	  <!--底部开始-->
+	  <!--footer-->
+	  <footer class="footer-content"></footer>
+	  <!--footerEND-->
+	  <!--底部结束-->
+	  <script src="../js/jquery.min.js"></script>
+	  <script src="../js/bootstrap.min.js"></script>
+	  <script src="../js/index.js"></script>
+	  <script src="http://api.map.baidu.com/api?v=2.0&ak=A1LU7iHS0avqQwPLAxbhKn0UYSQCuRVH"></script>
+	  <script src="../js/Map/jquery.baiduMap.min.js"></script>
+	  <script>	
+		//加载公共页面部分
+		$(function(){
+			  $('.mod-header').load("header.html");
+			  $('.nav').load("nav.html");
+			  $('.footer-content').load('footer.html');
+		})
+	  </script>
+	  <script type="text/javascript">
+	  function funsubmit(){
+	  	var name = document.getElementById("message-name").value.trim();
+	  	if(name==""){
+	  		alert("姓名不能为空！");
+	  		document.getElementById("message-name").focus();
+	  		return false;
+	  	}
+	  	var phone = document.getElementById("message-phone").value.trim();
+	  	if(phone==""){
+	  		alert("电话不能为空！");
+	  		document.getElementById("message-phone").focus();
+	  		return false;
+	  	}
+	  	
+	  	if(!validatePhone(phone)) {
+	  		alert("电话格式错误！");
+	  		document.getElementById("message-phone").focus();
+	  		return false;
+	  	}
+	  	var content = document.getElementById("message-text").value.trim();
+	  	if(content == "") {
+	  		alert("留言不能为空！");
+	  		document.getElementById("message-text").focus();
+	  		return false;
+	  	}
+	  	var yzm = document.getElementById("yzm").value.trim();
+	  	if(yzm==""){
+	  		alert("验证码不能为空！");
+	  		document.getElementById("yzm").focus();
+	  		return false;
+	  	}
+	  	return true;
+	  }
+	  function validatePhone(phone){
+	      //验证规则
+	      var isMobile = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1})|(14[0-9]{1}))+\d{8})$/;  
+	      var isPhone = /^(?:(?:0\d{2,3})-)?(?:\d{7,8})(-(?:\d{3,}))?$/;
+	       //如果为1开头则验证手机号码  
+	      if (phone.substring(0, 1) == 1) {  
+	          if (!isMobile.exec(phone) && phone.length != 11) {  
+	              //错误提示信息
+	              return false;  
+	          }  
+	      }  
+	      //如果为0开头则验证固定电话号码  
+	      else if (phone.substring(0, 1) == 0) {  
+	          if (!isPhone.test(phone)) {  
+	             //错误提示信息  
+	              return false;  
+	          }  
+	      }  
+	      //否则全部不通过  
+	      else {  
+	       //错误提示信息 
+	          return false;  
+	      }  
+	      return true;  
+	  }
+	  </script>
+	  <script>
+	     var points = [{"id":1,"lng":121.59197,"lat":31.20494,"title":"\u829C\u6E56\u603B\u90E8","content":["\u5730\u5740\uFF1A\u829C\u6E56\u5E02\u5F0B\u6C5F\u533A\u9AD8\u65B0\u533A\u670D\u52A1\u5916\u5305\u56EDA13\u680B","\u7535\u8BDD\uFF1A13083210911"]}];
+	     map = new BaiduMap({
+	      id: "container3",
+	      level: 16, //  选填--地图级别--(默认15)	
+	      zoom: true, // 选填--是否启用鼠标滚轮缩放功能--(默认false)
+	     // type: ["地图", "卫星", "三维"], // 选填--显示地图类型--(默认不显示)
+	      //width: 320, // 选填--信息窗口width--(默认自动调整)
+	      //height: 70, // 选填--信息窗口height--(默认自动调整)
+	      titleClass: "title-1",
+	      contentClass: "content",
+	      showPanorama: true, // 是否显示全景控件(默认false)
+	      showMarkPanorama: true, // 是否显示标注点全景图(默认false)
+	      showLabel: false, // 是否显示文本标注(默认false)
+	      mapStyle: "normal", // 默认normal,可选dark,light
+	      icon: { // 选填--自定义icon图标
+	        url: "../images/marker2.png",
+	        width: 17,
+	        height: 40
+	      },
+	      centerPoint: { // 中心点经纬度
+	        lng: 118.370565,
+	        lat: 31.277442
+	      },
+	      index: 0, // 开启对应的信息窗口，默认-1不开启
+	      animate: true, // 是否开启坠落动画，默认false
+	      points: points, // 标注点--id(唯一标识)
+	      callback: function(id) {
+	    
+	        $(".map_list").find("li").eq(id - 1).addClass("active").siblings().removeClass("active");
+	      }
+	    });
+	    var data = map.getPosition();
+	    var $li = $(".map_list").find("li");
+	    $li.each(function(i) {
+	      $(this).data("id", i + 1);
+	    }).on("click", function() {
+	    map.openInfoWindow($(this).data("id"));
+	      var curPoint = new BMap.Point(map.currentData.lng, map.currentData.lat);
+	       // console.log(map.opts.centerPoint)
+	      map = new BaiduMap({
+	          id: "container3",
+	          level: 16, //  选填--地图级别--(默认15)
+	          zoom: true, // 选填--是否启用鼠标滚轮缩放功能--(默认false)
+	         // type: ["地图", "卫星", "三维"], // 选填--显示地图类型--(默认不显示)
+	          width: 330, // 选填--信息窗口width--(默认自动调整)
+	          height: 70, // 选填--信息窗口height--(默认自动调整)
+	          titleClass: "title-1",
+	          contentClass: "content",
+	          showPanorama: true, // 是否显示全景控件(默认false)
+	          showMarkPanorama: true, // 是否显示标注点全景图(默认false)
+	          showLabel: false, // 是否显示文本标注(默认false)
+	          mapStyle: "normal", // 默认normal,可选dark,light
+	          icon: { // 选填--自定义icon图标
+	            url: "../images/marker2.png",
+	            width: 17,
+	            height: 40
+	          },
+	          centerPoint:(  // 中心点经纬度
+	            curPoint
+	          ),
+	          index: 0, // 开启对应的信息窗口，默认-1不开启
+	          animate: true, // 是否开启坠落动画，默认false
+	          points: points, // 标注点--id(唯一标识)
+	          callback: function(id) {
+	            $(".map_list").find("li").eq(id - 1).addClass("active").siblings().removeClass("active");
+	          }
+	      });
+	       // console.log(map.opts.centerPoint)
+	      map.openInfoWindow($(this).data("id"));
+	      $(this).addClass("active").siblings().removeClass("active");
+	    }).eq(data.id - 1).addClass("active");
+	  </script>
+	      
+</body>
